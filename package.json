@@ -1,0 +1,30 @@
+{
+  "name": "i2c-adt7420",
+  "version": "1.0.0",
+  "description": "ADT7420/ADT7410 I2C temperature sensor driver",
+  "keywords": [
+    "linux",
+    "i2c",
+    "temperature",
+    "sensor",
+    "adt7420",
+    "adt7410",
+    "adt74x0",
+    "raspberry",
+    "pi"
+  ],
+  "main": "adt7420.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Tim van der Staaij",
+  "license": "MIT",
+  "repository": "github:tvdstaaij/node-i2c-adt7420",
+  "bugs": {
+    "url": "https://github.com/tvdstaaij/node-i2c-adt7420/issues"
+  },
+  "homepage": "https://github.com/tvdstaaij/node-i2c-adt7420#readme",
+  "dependencies": {
+    "i2c-bus": "^3.0.0"
+  }
+}
