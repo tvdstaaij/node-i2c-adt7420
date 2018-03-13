@@ -1,0 +1,7 @@
+language: node_js
+node_js:
+  - "node"
+  - "8"
+  - "6"
+env:
+  - NO_REAL_ADT7420
