@@ -89,8 +89,11 @@ describe('ADT7420 (stubbed)', function() {
     const adt7420Stub = new ADT7420Stub(0x4A); // Mismatched address
     const adt7420 = new ADT7420(adt7420Stub, ADT7420.I2C_ADDRESS_DEFAULT);
     return adt7420.readTemperature()
-      .then(assert.fail)
-      .catch((err) => err.should.be.an('error'));
+      .then(() => {
+        throw new Error('Should not succeed');
+      }, (err) => {
+        should.exist(err);
+      });
   });
 
 });
