@@ -1,6 +1,6 @@
 {
   "name": "i2c-adt7420",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ADT7420/ADT7410 I2C temperature sensor driver",
   "keywords": [
     "linux",

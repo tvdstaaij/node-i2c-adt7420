@@ -17,6 +17,12 @@ Supported features:
 * Continuous and one sample per second modes
 * Alternate I2C addresses
 
+## Installation
+
+Available from npm: `npm install i2c-adt7420`
+
+Requires Node.js 6 or higher.
+
 ## Example: ADT7420 temperature server
 
 ```javascript
@@ -24,7 +30,7 @@ const express = require('express');
 const {ADT7420} = require('i2c-adt7420');
 
 const config = {
-  pollingInterval: 1000
+  pollingInterval: 1000,
   httpPort: 7420,
   i2cBusNumber: 1
 };
@@ -43,7 +49,7 @@ app.get('/', (req, res) => {
       kelvin: temperature.kelvin
     },
     time_updated: lastUpdateTime
-  }));
+  }, null, 2));
 })
 
 ADT7420.open({
