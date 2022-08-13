@@ -7,8 +7,8 @@
 Node.js driver for the acurate (±0.25°C) yet affordable [ADT7420][adt7420-prod] digital temperature sensor.
 Should also work with the less accurate [ADT7410][adt7410-prod].
 
-This module was tested using a Raspberry Pi 3 Model B and the [EVAL-ADT7420-PMD][adt7420-eval] breakout board.
-Please do note that the power LED on the EVAL-ADT7420-PMD board significantly influences the temperature reading!
+This module was tested with Raspberry Pi 3B and 4B, wired to an [EVAL-ADT7420-PMDZ][adt7420-eval] breakout board.
+Please do note that the power LED on the EVAL-ADT7420-PMDZ board significantly influences the temperature reading!
 The LED or its series resistor should be desoldered if you need accurate temperature.
 
 Supported features:
@@ -103,7 +103,7 @@ Arguments:
 
 * `options` object of options:
     * `i2cBusNumber` Optional integer specifying the system's I2C device number of the bus the chip is attached to.
-      If you use a Raspberry Pi, this should be 1 for a Raspberry Pi 3 and 0 for older models.
+      If you use a Raspberry Pi, this should typically be `1` for a Raspberry Pi 2+ and `0` for the original model.
       Make sure the operating system supports I2C and that it is enabled. Default: 0.
     * `i2cAddress` Optional, one of `ADT7420.I2C_ADDRESS_0x48` (default), `ADT7420.I2C_ADDRESS_0x49`, `ADT7420.I2C_ADDRESS_0x4A`, `ADT7420.I2C_ADDRESS_0x4B`.
       This only needs to be specified if you have changed the default address of the chip by physically connecting its address configuration pins.
