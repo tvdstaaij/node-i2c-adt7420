@@ -2,7 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/i2c-adt7420.svg)](https://www.npmjs.com/package/i2c-adt7420)
 [![npm license](https://img.shields.io/npm/l/i2c-adt7420.svg)](https://www.npmjs.com/package/i2c-adt7420)
-[![travis build](https://travis-ci.org/tvdstaaij/node-i2c-adt7420.svg?branch=master)](https://travis-ci.org/tvdstaaij/node-i2c-adt7420)
+[![tests](https://github.com/tvdstaaij/node-i2c-adt7420/actions/workflows/test.yml/badge.svg)](https://github.com/tvdstaaij/node-i2c-adt7420/actions/workflows/test.yml)
 
 Node.js driver for the acurate (±0.25°C) yet affordable [ADT7420][adt7420-prod] digital temperature sensor.
 Should also work with the less accurate [ADT7410][adt7410-prod].
