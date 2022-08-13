@@ -21,7 +21,7 @@ Supported features:
 
 Available from npm: `npm install i2c-adt7420`
 
-Requires Node.js 6 or higher.
+Requires Node.js 14 or higher.
 
 ## Example: ADT7420 temperature server
 
